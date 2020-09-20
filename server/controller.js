@@ -3,7 +3,9 @@
 
 
 const controller = {
-  get: (req, res) => {},
+  get: (req, res) => {
+    res.status(200).send('HELLO FROM GET REQUEST')
+  },
   post: (req, res) => {},
   put: (req, res) => {},
   delete: (req, res) => {}
