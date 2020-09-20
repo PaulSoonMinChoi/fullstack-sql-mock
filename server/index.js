@@ -10,7 +10,7 @@ server.use(cors());
 server.use(bodyParser.json());
 server.use(bodyParser.urlencoded({extended: true}));
 
-server.use('/', express.static(path.join(__dirname + '../client/dist')));
+server.use('/', express.static(path.join(__dirname, '../client/dist')));
 
   //routes
 server.use('/api', router);
